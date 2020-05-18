@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: rocker/verse
+From: rocker/verse:4.0.0
 
 %post
         exec install2.r -s TRUE\
