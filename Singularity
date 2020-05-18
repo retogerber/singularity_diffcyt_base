@@ -14,15 +14,5 @@ From: rocker/verse:4.0.0
                 RhpcBLASctl \
                 uwot
 
-        R -e 'BiocManager::install(version="3.12",ask=FALSE);
-        BiocManager::install(c("flowCore",
-          "FlowSOM",
-          "SummarizedExperiment",
-          "S4Vectors", 
-          "limma",
-          "edgeR",
-          "ComplexHeatmap",
-          "BiocParallel",
-          "BiocStyle", 
-          "CATALYST"), ask = FALSE)'
+        R -e 'BiocManager::install(version="3.12",ask=FALSE);BiocManager::install(c("flowCore","FlowSOM","SummarizedExperiment","S4Vectors", "limma","edgeR","ComplexHeatmap","BiocParallel","BiocStyle", "CATALYST"), ask = FALSE)'
 
