@@ -4,6 +4,7 @@ From: rocker/rstudio:4.0.0
 %post
 
         exec install2.r -s TRUE\
+                BiocManager \
                 tidyverse \
                 lme4 \
                 multcomp \
