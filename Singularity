@@ -1,10 +1,11 @@
 Bootstrap: docker
-From: rocker/verse:4.0.0
+From: rocker/rstudio:4.0.0
 
 %post
         R -e 'BiocManager::install(version="3.12",ask=FALSE);BiocManager::install(c("flowCore","FlowSOM","SummarizedExperiment","S4Vectors", "limma","edgeR","ComplexHeatmap","BiocParallel","BiocStyle", "CATALYST"), ask = FALSE)'
 
         exec install2.r -s TRUE\
+                tidyverse \
                 lme4 \
                 multcomp \
                 reshape2 \
